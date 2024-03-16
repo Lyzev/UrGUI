@@ -27,7 +27,7 @@
 
 ### MelonLoader
 
-2. put `UrGUI.dll` in `/Plugins/`
+2. put `UrGUI.dll` in `/UserLibs/`
 
 <br>
 
