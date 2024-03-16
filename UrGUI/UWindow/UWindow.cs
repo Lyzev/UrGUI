@@ -513,10 +513,11 @@ namespace UrGUI.UWindow
         /// <summary>
         /// a blank control for organizing
         /// </summary>
-        public void Space()
+        public UWindowControls.WSpace Space()
         {
             var c = new UWindowControls.WSpace();
             Add(c);
+            return c;
         }
 
         /// <summary>
@@ -524,10 +525,11 @@ namespace UrGUI.UWindow
         /// </summary>
         /// <param name="text">label's text</param>
         /// <param name="alignment">alignment inside of control box</param>
-        public void Label(string text)
+        public UWindowControls.WLabel Label(string text)
         {
             var c = new UWindowControls.WLabel(text);
             Add(c);
+            return c;
         }
 
         /// <summary>
@@ -535,10 +537,11 @@ namespace UrGUI.UWindow
         /// </summary>
         /// <param name="text"></param>
         /// <param name="onPressed"></param>
-        public void Button(string text, System.Action onPressed)
+        public UWindowControls.WButton Button(string text, System.Action onPressed)
         {
             var c = new UWindowControls.WButton(onPressed, text);
             Add(c);
+            return c;
         }
 
         /// <summary>
@@ -547,11 +550,12 @@ namespace UrGUI.UWindow
         /// <param name="text">label's</param>
         /// <param name="onValueChanged"></param>
         /// <param name="value">default value</param>
-        public void Toggle(string text, System.Action<bool> onValueChanged,
+        public UWindowControls.WToggle Toggle(string text, System.Action<bool> onValueChanged,
             bool value = false)
         {
             var c = new UWindowControls.WToggle(onValueChanged, value, text);
             Add(c);
+            return c;
         }
 
         /// <summary>
@@ -564,12 +568,13 @@ namespace UrGUI.UWindow
         /// <param name="max">maximal value</param>
         /// <param name="numberIndicator">if number indicator showing current value</param>
         /// <param name="numberIndicatorFormat">String.Format value of indicator</param>
-        public void Slider(string text, System.Action<float> onValueChanged, float value, float min, float max,
+        public UWindowControls.WSlider Slider(string text, System.Action<float> onValueChanged, float value, float min, float max,
             bool numberIndicator = false, string numberIndicatorFormat = "0.##")
         {
             var c = new UWindowControls.WSlider(onValueChanged, value, min, max, numberIndicator,
                 numberIndicatorFormat, text);
             Add(c);
+            return c;
         }
 
         /// <summary>
@@ -580,11 +585,12 @@ namespace UrGUI.UWindow
         /// <param name="value">default value</param>
         /// <param name="maxSymbolLength">maximum number of characters</param>
         /// <param name="regexReplace">regex filter for unwanted characters typed by user</param>
-        public void TextField(string text, System.Action<string> onValueChanged, string value, int maxSymbolLength = int.MaxValue,
+        public UWindowControls.WTextField TextField(string text, System.Action<string> onValueChanged, string value, int maxSymbolLength = int.MaxValue,
             string regexReplace = "")
         {
             var c = new UWindowControls.WTextField(onValueChanged, value, maxSymbolLength, regexReplace, text);
             Add(c);
+            return c;
         }
 
         /// <summary>
@@ -594,10 +600,11 @@ namespace UrGUI.UWindow
         /// <param name="onValueChanged"></param>
         /// <param name="value">default value</param>
         /// <param name="maxSymbolLength">maximum number of characters</param>
-        public void IntField(string text, System.Action<int> onValueChanged, int value, int maxSymbolLength = int.MaxValue)
+        public UWindowControls.WIntField IntField(string text, System.Action<int> onValueChanged, int value, int maxSymbolLength = int.MaxValue)
         {
             var c = new UWindowControls.WIntField(onValueChanged, value, maxSymbolLength, text);
             Add(c);
+            return c;
         }
         
         /// <summary>
@@ -607,10 +614,11 @@ namespace UrGUI.UWindow
         /// <param name="onValueChanged"></param>
         /// <param name="value">default value</param>
         /// <param name="maxSymbolLength">maximum number of characters</param>
-        public void FloatField(string text, System.Action<float> onValueChanged, float value, int maxSymbolLength = int.MaxValue)
+        public UWindowControls.WFloatField FloatField(string text, System.Action<float> onValueChanged, float value, int maxSymbolLength = int.MaxValue)
         {
             var c = new UWindowControls.WFloatField(onValueChanged, value, maxSymbolLength, text);
             Add(c);
+            return c;
         }
 
         /// <summary>
@@ -619,10 +627,11 @@ namespace UrGUI.UWindow
         /// <param name="text">label's text</param>
         /// <param name="onValueChanged"></param>
         /// <param name="value">default value</param>
-        public void ColorPicker(string text, System.Action<Color> onValueChanged, Color value)
+        public UWindowControls.WColorPicker ColorPicker(string text, System.Action<Color> onValueChanged, Color value)
         {
             var c = new UWindowControls.WColorPicker(onValueChanged, value, text, _controlHeight);
             Add(c);
+            return c;
         }
 
         /// <summary>
@@ -632,10 +641,11 @@ namespace UrGUI.UWindow
         /// <param name="onValueChanged"></param>
         /// <param name="value">default selected id</param>
         /// <param name="list">list that holds all possible values</param>
-        public void DropDown(string text, System.Action<int> onValueChanged, int value, Dictionary<int, string> list)
+        public UWindowControls.WDropDown DropDown(string text, System.Action<int> onValueChanged, int value, Dictionary<int, string> list)
         {
             var c = new UWindowControls.WDropDown(onValueChanged, value, list, text);
             Add(c);
+            return c;
         }
 
         /// <summary>
@@ -643,12 +653,13 @@ namespace UrGUI.UWindow
         /// </summary>
         /// <param name="lineColor">Color of separator</param>
         /// <param name="lineThickness">Thinness of separator</param>
-        public void Separator(Color lineColor = default(Color), float lineThickness = 2f)
+        public UWindowControls.WSeparator Separator(Color lineColor = default(Color), float lineThickness = 2f)
         {
             if (lineColor == default(Color))
                 lineColor = new Color(1, 1, 1, .9f);
             var c = new UWindowControls.WSeparator(lineColor,lineThickness);
             Add(c);
+            return c;
         }
 
         #endregion

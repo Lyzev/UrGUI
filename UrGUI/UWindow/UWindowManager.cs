@@ -1,10 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-using static UrGUI.Utils.Logger;
-using UnityEngine;
 
 namespace UrGUI.UWindow
 {

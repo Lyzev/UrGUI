@@ -9,9 +9,9 @@ using static UrGUI.UWindow.UWindowManager;
 
 namespace UrGUI.UWindow
 {
-    internal static class UWindowControls
+    public static class UWindowControls
     {
-        internal class WLabel : WControl
+        public class WLabel : WControl
         {
             private Rect _rect = new Rect();
 
@@ -50,7 +50,7 @@ namespace UrGUI.UWindow
             }
         }
 
-        internal class WButton : WControl
+        public class WButton : WControl
         {
             private readonly System.Action _onPressed;
 
@@ -68,7 +68,7 @@ namespace UrGUI.UWindow
             }
         }
 
-        internal class WToggle : WControl
+        public class WToggle : WControl
         {
             public readonly System.Action<bool> OnValueChanged;
             
@@ -118,7 +118,7 @@ namespace UrGUI.UWindow
             }
         }
 
-        internal class WSlider : WControl
+        public class WSlider : WControl
         {
             public readonly System.Action<float> OnValueChanged;
             public float Value;
@@ -166,7 +166,7 @@ namespace UrGUI.UWindow
             }
         }
 
-        internal class WTextField : WControl
+        public class WTextField : WControl
         {
             public readonly System.Action<string> OnValueChanged;
             public string Value;
@@ -216,7 +216,7 @@ namespace UrGUI.UWindow
             }
         }
 
-        internal class WIntField : WControl
+        public class WIntField : WControl
         {
             public readonly System.Action<int> OnValueChanged;
             public int Value;
@@ -270,7 +270,7 @@ namespace UrGUI.UWindow
             }
         }
         
-        internal class WFloatField : WControl
+        public class WFloatField : WControl
         {
             public readonly System.Action<float> OnValueChanged;
             public float Value;
@@ -329,7 +329,7 @@ namespace UrGUI.UWindow
             }
         }
 
-        internal class WColorPicker : WControl
+        public class WColorPicker : WControl
         {
             public Color CurrentColor;
 
@@ -435,7 +435,7 @@ namespace UrGUI.UWindow
             }
         }
 
-        internal class WDropDown : WControl
+        public class WDropDown : WControl
         {
             public readonly System.Action<int> OnValueChanged;
             public readonly Dictionary<int, string> ValuesList;
@@ -536,7 +536,7 @@ namespace UrGUI.UWindow
             }
         }
 
-        internal class WSeparator : WControl
+        public class WSeparator : WControl
         {
             private Color _lineColor;
             private float _lineThickness;
@@ -562,7 +562,7 @@ namespace UrGUI.UWindow
             }
         }
         
-        internal class WSpace : WControl
+        public class WSpace : WControl
         {
             internal WSpace() : base(string.Empty) { }
 
