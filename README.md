@@ -1,7 +1,7 @@
 
 <h1 align="center">UrGUI</h1>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub issues](https://img.shields.io/github/issues/Lyzev/UrGUI) [![Workflow Badge](https://github.com/Lyzev/UrGUI/actions/workflows/ReleaseBuild.yml/badge.svg)](https://github.com/Lyzev/UrGUI/actions/workflows/ReleaseBuild.yml) [![CodeFactor](https://www.codefactor.io/repository/github/Lyzev/urgui/badge/main)](https://www.codefactor.io/repository/github/Lyzev/urgui/overview/main)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub issues](https://img.shields.io/github/issues/Lyzev/UrGUI)
 
 > UrGUI: easy to use library to create simple UI/GUI in Unity using bult-in IMGUI system
 > <br><br>
