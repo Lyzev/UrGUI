@@ -1,7 +1,7 @@
 
 <h1 align="center">UrGUI</h1>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub issues](https://img.shields.io/github/issues/Hirashi3630/UrGUI) [![Workflow Badge](https://github.com/Hirashi3630/UrGUI/actions/workflows/ReleaseBuild.yml/badge.svg)](https://github.com/Hirashi3630/UrGUI/actions/workflows/ReleaseBuild.yml) [![CodeFactor](https://www.codefactor.io/repository/github/hirashi3630/urgui/badge/main)](https://www.codefactor.io/repository/github/hirashi3630/urgui/overview/main)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) ![GitHub issues](https://img.shields.io/github/issues/Lyzev/UrGUI) [![Workflow Badge](https://github.com/Lyzev/UrGUI/actions/workflows/ReleaseBuild.yml/badge.svg)](https://github.com/Lyzev/UrGUI/actions/workflows/ReleaseBuild.yml) [![CodeFactor](https://www.codefactor.io/repository/github/Lyzev/urgui/badge/main)](https://www.codefactor.io/repository/github/Lyzev/urgui/overview/main)
 
 > UrGUI: easy to use library to create simple UI/GUI in Unity using bult-in IMGUI system
 > <br><br>
@@ -22,7 +22,7 @@
 ## Getting Started
 
 1. Get `UrGUI.dll`
-   - Download built assembly from [Release page](https://github.com/Hirashi3630/UrGUI/releases)
+   - Download built assembly from [Release page](https://github.com/Lyzev/UrGUI/releases)
    - Download source code and build it yourself
 
 ### MelonLoader
